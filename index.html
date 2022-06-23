@@ -10,78 +10,105 @@
    <title>Кадкин Артем Резюме</title>
 </head>
 <body>
-   <h1>Артем Кадкин</h1>
-   <img src="img/IMG_20220124_115615.jpg" alt="Кадкин Артем" width="200">
-   <p>Я <strong>эксперт-генетик</strong> и работаю в СЭЦ <strong>Следственого комитета Российской Федерации</strong></p>
-   <p>Также я занимаюсь <em>фронтенд разработкой</em> и делаю <em>приложение о спорте.</em> Данное приложение поможет людям <strong><em>правильно заниматься спортом</em></strong>, <em>подобрать необходимую программу тренировок</em> и также <strong>сбалансировать свое питание!</strong> </p>
-   <h2>Список социальных сетей:</h2>
-      <p>
-         <a href="https://t.me/KadkinArtem" target="_blank">Написать в Telegram</a>
+   <div class="container">
+      <header class="header">
+         <div class="header-info">
+            <img src="img/IMG_20220124_115615.jpg" alt="Кадкин Артем">
+            <div class="header__description">
+               <h1>Артем Кадкин</h1>
+               <p class="header__description--geneticist">Я <strong>эксперт-генетик</strong> и работаю в СЭЦ <strong>Следственого комитета Российской Федерации</strong></p>
+               <p class="header__description--frontend">Также я занимаюсь <em>фронтенд разработкой</em> и делаю <em>приложение о спорте.</em></p>
+               <p class="header__description--appication">Данное приложение поможет людям <strong><em>правильно заниматься спортом</em></strong>, <em>подобрать необходимую программу тренировок</em> и также <strong>сбалансировать свое питание!</strong> </p>
+               <h2>Список социальных сетей:</h2>
+               <p class="social">
+                  <a href="https://t.me/KadkinArtem" target="_blank" class="link">Telegram</a>
+                  |
+                  <a href="https://vk.com/id12274943" target="_blank" class="link">VK</a>
+               </p>
+            </div>
+         </div>
          
-         <a href="https://vk.com/id12274943" target="_blank">VK</a>
-      </p>
-   <h2>Мои увлечения</h2>
-      <ol>
-         <li>Занимаюсь спортом
-            <ul>
-               <li>Финтес</li>
-               <li>Гиревой спорт</li>
-               <li>Волейбол</li>
-            </ul>
-         </li>
-         <li>Чтение художественной литературы</li>
-         <li>Основы фронтенд разработки</li>
-         <li>Разработка тренировочных программ</li>
-         <li>Английский язык</li>
-      </ol>
-      <h2>Опыт работы</h2>
-      <table>
-         <thead>
-            <tr>
-               <th>Название</th>
-               <th>Должность</th>
-               <th>Год работы</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <td>СФУ</td>
-               <td>Инженер-вивария</td>
-               <td>2008-2009г.</td>
-            </tr>
-            <tr>
-               <td>МВД</td>
-               <td>Эксперт-генетик</td>
-               <td>2009-2014г.</td>
-            </tr>
-            <tr>
-               <td>СК РФ</td>
-               <td>Эксперт-генетик</td>
-               <td>2014-по настоящее время</td>
-            </tr>
-         </tbody>
-      </table>
-
-      <h2>Связаться со мной</h2>
-      <form action="#">
-            <div>
-               <label for="name">Ваше имя:</label>
-               <input type="text" id="name" placeholder="Введите имя">
-            </div>
-            <div>
-               <label for="email">Ваш email:</label>
-               <input type="email" id="email" placeholder="Ваш email">
-            </div>
-            <div>
-               <label for="message">Ваше сообщение:</label>
-               <br>
-               <textarea name="" id="message" cols="32" rows="12" placeholder="Ввидите сообщение..."></textarea>
-            </div>
-            <div>
-               <input type="submit" value="Отправить!">
-            </div>
-      </form>
+      </header>
       
+      <section class="card hobbies">
+         <h2>Мои увлечения</h2>
+         <ol>
+            <li>Занимаюсь спортом
+               <ul>
+                  <li>Финтес</li>
+                  <li>Гиревой спорт</li>
+                  <li>Волейбол</li>
+               </ul>
+            </li>
+            <li>Чтение художественной литературы</li>
+            <li>Фронтенд разработкой</li>
+            <li>Составлением тренировочных программ</li>
+            <li>Английским языком</li>
+         </ol>
+      </section>
+   
+      <section class="card works">
+         <h2>Опыт работы</h2>
+         <table class="table">
+            <thead>
+               <tr>
+                  <th>Название</th>
+                  <th>Должность</th>
+                  <th>Год работы</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>СФУ</td>
+                  <td>Инженер-вивария</td>
+                  <td>2008-2009г.</td>
+               </tr>
+               <tr>
+                  <td>МВД</td>
+                  <td>Эксперт-генетик</td>
+                  <td>2009-2014г.</td>
+               </tr>
+               <tr>
+                  <td>СК РФ</td>
+                  <td>Эксперт-генетик</td>
+                  <td>2014-по настоящее время</td>
+               </tr>
+            </tbody>
+         </table>
+      </section>
+      <section class="card courses">
+         <h2 class="courses__text">Мои курсы</h2>
+         <ul class="courses__link">
+            <li><a href="https://netology.ru/profile/8033802" target="_blank" class="link">Основы верстки сайта</a></li>
+            <li><a href="https://wayup.in/library/course10" target="_blank" class="link">Веб-верстальщик: начало</a></li>
+            <li><a href="https://wayup.in/library/course18" target="_blank" class="link">Javascript: погружение</a></li>
+         </ul>
+      </section>
+      
+      <footer class="footer">
+         <h2>Связаться со мной</h2>
+         <form action="#" class="footer-form">
+            <div class="footer-form__row">
+               <div class="footer-form__group">
+                  <label for="name">Ваше имя:</label>
+                  <input type="text" id="name" placeholder="Введите имя">
+               </div>
+               <div class="footer-form__group">
+                  <label for="email">Ваш email:</label>
+                  <input type="email" id="email" placeholder="Ваш email">
+               </div>
+            </div>
+              
+               <div class="footer-form__group">
+                  <label for="message">Ваше сообщение:</label>
+                  <textarea name="#" id="message" cols="32" rows="12" placeholder="Ввидите сообщение..."></textarea>
+               </div>
+               <div>
+                  <input type="submit" value="Отправить!" class="btn">
+               </div>
+         </form>
+      </footer>
+   </div>
       
 </body>
 </html>

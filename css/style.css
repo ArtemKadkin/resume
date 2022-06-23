@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+   background: #DCDCDD;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   font-size: 18px;
+   color: #747689;
+}
+
+.container{
+   max-width: 1180px;
+   margin: auto;
+}
+.header{
+   margin: 10px 0;
+}
+.header-info{
+   display: flex;
+   
+} 
+.header-info img{
+   box-shadow: 4px 14px 8px rgba(0, 0, 0, 0.25);
+   border-radius: 20px;
+   width: 300px;
+   margin-right: 20px;
+}
+
+.header-info h1{
+   font-size: 37px;
+   letter-spacing: 5px;
+   font-weight: 900;
+}
+
+/* .header-info h1::first-letter{
+   color: aquamarine; 
+} */
+.header__description{
+   box-shadow: 0 5px 10px #747689;
+   border-radius: 25px;
+   padding: 15px;
+}
+.header__description p{
+   padding-bottom: 15px;
+}
+.header__description h2{
+   margin-bottom: 10px;
+}
+.header__description--geneticist{
+   font-size: 22px;
+   padding: 10px 0 25px 0;
+}
+.social{
+   margin-bottom: 20px;
+}
+.card{
+   border-radius: 25px;
+   margin-bottom: 20px;
+   box-shadow: 0 8px 12px #787879;
+   padding: 25px;
+}
+.hobbies{
+   background: #7FFFD4;
+}
+
+.hobbies ol{
+   padding-left: 20px;
+   color: #383838;
+}
+.hobbies ol li{
+   margin-bottom: 15px;
+}
+.works{
+   background: #E9967A;
+}
+.courses{
+   background: #F0E68C;
+}
+
+.link{
+   text-decoration: none;
+   color: #383838;
+}
+
+.courses__link li{
+   list-style: none;
+   background: url('/img/html-5.png') left no-repeat;
+   padding-left: 40px;
+   margin-bottom: 15px;
+}
+.courses__link li:last-child{
+   background: url('/img/premium-icon-javascript-2351891.png') left no-repeat;
+   padding-left: 42px;
+}
+
+.link:hover, .btn:hover{
+   opacity: 0.7;
+   color: #E9967A;
+   text-decoration: underline;
+}
+.link:active{
+   color: red;
+}
+
+/* .link:visited{
+   color: rgb(26, 221, 0);
+} */
+
+.btn{
+   background: #383838;
+   color: aliceblue;
+   font-family: inherit;
+   cursor: pointer;
+   padding: 15px 30px;
+   border-radius: 5px;
+   border: none;
+   box-shadow: 3px 7px 10px #747689;
+}
+.table{
+   width: 100%;
+}
+.table td{
+   text-align: center;
+   padding-bottom: 10px;
+}
+.table thead tr th{
+   font-size: 24px;
+   background: #7FFFD4;
+   border-radius: 15px;
+}
+.table tbody tr td:nth-child(even){
+   background: #F0E68C;
+   border-radius: 10px;
+}
+.table tbody tr td:nth-child(odd) {
+   background: #E0FFFF;
+   border-radius: 10px;
+}
+.table tbody tr td:hover{
+   background: #AFEEEE;
+}
+.footer h2{
+   text-align: center;
+   padding-bottom: 20px;
+}
+.footer-form__row{
+   margin-bottom: 10px;
+   display: flex;
+}
+.footer-form__row .footer-form__group{
+   /* display: inline-block; */
+   margin-right: 15px;
+   width: 50%;
+}
+.footer-form__row .footer-form__group:last-child{
+   margin-right: 0;
+}
+.footer-form__group label{
+   display: block;
+}
+.footer-form__group input, .footer-form__group textarea {
+   display: block;
+   width: 100%;
+   box-sizing: border-box;
+   border: none;
+   color: #000;
+   padding: 10px 0 10px;
+   font-family: inherit;
+}
+.footer-form__group textarea{
+   margin-bottom: 10px;
+}
+
+@media (max-width:950px){
+   body{
+      font-size: 16px;
+      padding: 5px;
+   }
+   .header-info img{
+      width: 200px;
+      height: 300px;
+   }
+   .header__description{
+      height: 280px;
+      padding: 10px;
+   }
+   .header-info h1{
+      font-size: 27px;
+      letter-spacing: 3px;
+      font-weight: 700;
+   }
+   .header__description p{
+      padding-bottom: 5px;
+   }
+   .header__description h2{
+      margin-bottom: 5px;
+      font-size: 25px;
+   }
+   .header__description--geneticist{
+      font-size: 18px;
+      padding: 5px 0 15px 0;
+   }
+   .social{
+      margin-bottom: 0;
+      padding: 0;
+   }
+}
+
+
+@media (max-width:850px){
+   body{
+      font-size: 14px;
+   }
+   
+}
+@media (max-width:700px){
+   .header-info {
+      display: block;
+      text-align: center;
+   }
+   .header-info img{
+      height: 240px;
+   }
+   .footer-form__row{
+      display: block;
+     
+   }
+   .footer-form__group{
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+   }
+}
